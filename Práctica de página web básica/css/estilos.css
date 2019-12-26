@@ -13,6 +13,25 @@
     justify-content: center;
     height: 90vh;
 }
+nav{
+    background: #24435d;
+    padding: 10px;
+}
+
+nav a{
+    padding: 20px;
+}
+.nav-enlace{
+    display: inline-block;
+    background: #41c5c5;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-enlace:hover{
+    background: #ffcb56;
+}
 
 .about .about-content{
     
