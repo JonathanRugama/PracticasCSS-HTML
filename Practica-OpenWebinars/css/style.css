@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+ul,li{
+    padding: 0 0;
+    margin: 0 0;
+    /* Esto cambia el comportamiento de la lista, y hace que se muestre cada elemento al lado de otro*/
+    display: inline-block;
+}
+#alquileres{
+    width: 980px;
+    margin: 0 auto;
+}
+article{
+    display: inline-block;
+    background: #ccc;
+    width: 240px;
+    height: 240px;
+    margin: 2px 2px;
+    padding: 15px 15px;
+    border-radius: 55px;
+    opacity: 0.9;
+    box-shadow: 1px 5px 10px #888888;
+    text-shadow: 0.5px 0.5px green;
+}
+.casa-alquiler{
+    background: linear-gradient(to bottom, #d2ff52 28%,#91e842 100%);
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 15px 15px;
+    width: 28%;
+    height: 200px;
+    position: relative;
+}
+.casa-alquiler h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#menu-principal{
+    background-color: lightblue;
+}
+footer{
+    background-color: #CBCD00;
+    padding: 10px 10px;
+}
