@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+
+header {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+  text-align: justify;
+}
+section {
+   display: flex;
+   margin: 0px 100px;
+   flex-direction: ltr;
+    border-bottom: solid;
+    border-top: solid;
+    justify-content: center;
+    padding: 0px 0px;
+    
+}
+
+article {
+    margin: 0px 0px;
+    flex-wrap: wrap;
+    border-right: groove;
+    padding: 0px 10px;
+    
+    
+}
+article:first-of-type{
+    border-left: groove;
+}
+.articulo-lateral{
+    flex: 1;
+    
+}
+.articulo-central{
+    flex: 2;
+    
+}
+
+.articulo-ultimo{
+    padding: 0px 0px;
+    flex: 3;
+}
+
+.articulo-ultimo ul {
+    margin: 0px 0px;
+    padding: 0px 0px;
+   
+    
+}
+.articulo-ultimo ul li{
+    list-style: none;
+    margin: 0px;
+    padding: 30px;
+    font-size:x-large;
+  
+}
+
+.item-politica{
+    background-color: #FDEBAF;
+}
+.item-tecnologia{
+    background-color: #9AEAEC;
+}
+.item-local{
+    background-color: #82EBC7;
+}
+.item-opinion{
+    background-color: #81B9F9;
+}
+.item-deportes{
+    background-color: #9F9DF7;
+}
+
+
+   
+

@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+}
+header h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+.calculadora {
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 400 px;
+    background-color: black;
+    color: white;
+}
+.pantalla {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    text-align: right;
+    padding: 20px 5px;
+
+}
+div.calc-filas{
+    display: flex;
+}
+
+.boton-calculadora {
+    margin: 2px 2px;
+    padding: 40px 40px;
+    width: 25%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.calc-filas:first-child .boton-calculadora:first-child{
+    width: 50%;
+
+}
+.boton-calculadora:hover {
+    background-color: #ebebeb;
+}
+.boton-calculadora:active {
+    background-color: #9a9b9e;
+}
+
+.calc-filas:last-child .boton-calculadora:first-child{
+    width: 75%;
+ 
+}
+.boton-calculadora:last-child{
+    background-color: rgb(38, 156, 38);
+}
+
+.boton-calculadora:last-child:hover{
+    background-color: green;
+}
