@@ -1,0 +1,16 @@
+.container,.container-2 {
+    display: flex;
+    font-size: 3em;
+    background: yellow;
+}
+
+.item, .item-2 {
+    background: pink;
+  
+}
+.item-2 {
+    flex-grow: 10;
+}
+.item:nth-child(even),.item-2:nth-child(even) {
+    background: cyan;
+}

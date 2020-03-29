@@ -1,0 +1,63 @@
+body {
+    background-image: url("images/cielo.png");
+}
+.content-col {
+    
+    display: flex;
+    flex-flow: column;
+    border: blue;
+    flex-basis: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    
+}
+
+.row {
+    
+}
+
+nav {
+    
+    background-color: #E0BD92;
+    
+   
+}
+.row-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: cornsilk;
+    align-items: center;
+}
+.col {
+    flex: 0 0 40%;
+    margin-right: 4%;
+   
+}
+
+
+
+.container-nav {
+    height: 45px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+  
+    
+}
+a {
+    text-decoration: none;
+} 
+
+ 
+
+

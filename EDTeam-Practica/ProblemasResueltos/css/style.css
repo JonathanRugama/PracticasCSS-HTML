@@ -1,0 +1,137 @@
+/* *{
+    box-sizing: border-box;
+} */
+body {
+    
+    
+   
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+    
+}
+.menu-link{
+
+    text-decoration: none;
+    color: #eee;
+    
+}
+
+/* Layout basico */
+.menu{
+  
+    background:#333 ;
+
+}
+.menu-item{
+    display: flex;
+  
+    border-bottom: 1px solid #222;
+  
+    
+}
+.menu-link{
+    
+    padding: .75em 1em;
+    flex: block;
+}
+
+.menu-item:hover{
+    background: rgba(0,0,0,.5);
+}
+
+/* .card {
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+.card-poster{
+    width: 90%;
+}
+.card-title {
+    position: absolute;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    margin: 0;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.banner{
+    display: flex;
+    background: yellow;
+    height: 300px;
+}
+.banner-item{
+    display: flex;
+    flex: 1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 0.2s;
+}
+.banner-item:hover{
+    flex-grow:10;
+}
+.banner-item:hover .banner-title{
+    transform: rotate(0);
+}
+.banner-item:nth-child(1) {
+    background: hsl(90, 100%, 40%);
+}
+.banner-item:nth-child(2) {
+    background: hsl(30, 100%, 40%);
+}
+.banner-item:nth-child(3) {
+    background: hsl(200, 100%, 40%);
+}
+.banner-item:nth-child(4) {
+    background: hsl(280, 100%, 40%)
+}
+.banner-title {
+    margin: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.2s 0.2s;
+
+
+}
+@media screen and (min-width: 960px) {
+    .menu{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+       
+    }
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid #222;
+        
+    }
+    .menu-link{
+      
+        
+    }
+    
+}
