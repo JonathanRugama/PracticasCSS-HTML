@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5,100px);
+    gap: 5px;
+    grid-auto-flow: row dense;
+    grid-auto-rows: 100px ; /* PAra que cada vez que se creen nuevas filas o columnas, podemos
+                        definir lo que van a medir */
+    grid-auto-columns: 80px;
+    
+}
+.item {
+    background: yellow;
+    border: 1px solid #000;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2em;
+}
+.item-4 {
+    grid-row: span 5;
+}
+.item-9 {
+    grid-column: span 3;
+}
+.item-18 {
+    grid-area: span 2/ span 3;
+}
+.item-24{
+    grid-column: span 3;
+}

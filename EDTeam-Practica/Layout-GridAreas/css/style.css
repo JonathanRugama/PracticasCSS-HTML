@@ -1,40 +1,118 @@
 body{
     font-size: 2em;
+    margin: 0px;
     display: grid;
     min-height: 100vh;
-    gap: .5em;
+    font-size: 25px;
+    gap: 1em;
     grid-template-areas: 'header'
                          'main'
                          'aside'
                          'footer';
-               
+    
 }
+
+
+
 
 @media screen and (min-width: 1024px) {
     body {
-    grid-template-areas: 'header header '
-                         'main aside'
-                         'footer footer ';
-    grid-template-rows: 2em 1fr 2em;    
-    grid-template-columns: 3fr 1fr;     
+    grid-template-areas: 'header header header header header header header header header'
+                         'main main main main main aside aside aside aside'
+                         'footer footer footer footer footer footer footer footer footer';
+    grid-template-rows: 4em 1fr 4em;    
+    grid-template-columns: 1fr .5fr 1fr 1fr .5fr .5fr 1fr .5fr 1fr;     
     }
 
     
 }
 
-.item {
-    background: yellow;
-}
+
 
 .header{
     grid-area: header;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-template-columns: 14% auto 15%;
+    grid-template-rows: 3.2em ;
+    background: #00C300;
+    border-bottom-color: green;
+    border-bottom-style:solid;
+    border-bottom-width: 20px;
+    box-shadow: 0 5px 10px #aaa;
+    
 }
+nav {
+    grid-column-start: 2;
+    display: flex;
+  
+    
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+    
+    
+}
+.menu {
+    display: inherit;
+    flex-direction: row;
+    margin: 0;
+    align-items: stretch;
+ 
+}
+
+.menu-item, .menu-title {
+    display: inherit;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10px;
+    background: green;
+    
+   
+
+   
+}
+
+h1 {
+    margin: inherit;
+    
+}
+ a {
+    color: black;
+    text-decoration: none; 
+    
+}
+
 .aside {
     grid-area: aside;
+    border-top-color: green;
+    border-top-style:solid;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    border-top-width: 20px;
+    background: #00C300 ;
+    margin-bottom: 70%;
+    box-shadow: 0 5px 10px #aaa;
+ 
+
+    
+    
 }
 .main {
     grid-area: main;
+    grid-column-start: 2;
+    grid-column-end: 7;
 }
 .footer {
+
     grid-area:footer ;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background: #00C300;
+    border-top-color: green;
+    border-top-style:solid;
+    border-top-width: 20px;
 }
