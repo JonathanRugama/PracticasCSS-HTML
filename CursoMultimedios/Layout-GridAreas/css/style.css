@@ -28,7 +28,29 @@ body{
 }
 
 .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     grid-area: header;
+    
+}
+.navbar {
+    display: inherit;
+    flex: 1 1 200px;
+    flex-wrap: inherit;
+    justify-content: center;
+    background: green;
+    margin: 0;
+
+}
+.navbar-item {
+    margin: inherit;
+}
+.menu { 
+    display: inherit;
+    justify-content: center;
+    flex-wrap: inherit;
+  
 }
 .aside {
     grid-area: aside;
@@ -36,7 +58,7 @@ body{
 }
 .main {
     grid-area: main;
-   
+
     
 }
 .footer {
