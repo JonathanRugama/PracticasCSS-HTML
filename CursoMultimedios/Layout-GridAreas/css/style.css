@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
     display: grid;
     min-height: 100vh;
     gap: .5em;
@@ -41,7 +41,8 @@ body{
 }
 .menu-item {
     background: green;
-    margin: 0 15px; 
+    margin: 0px 15px 15px; 
+    border-radius: 10px;
 }
 .menu-item-text{
     display: block;
@@ -52,8 +53,20 @@ body{
 .aside {
     grid-area: aside;  
 }
+.aside-section {
+    border-top-color: green;
+    border-top-style:solid;
+    border-top-width: 20px;
+    background: #00C300 ;
+    margin: 0 5%;
+    border-radius: 10px;
+}
+.section-text {
+    margin: 5% 5%;
+}
 .main {
     grid-area: main;
+    margin: 0 5%;
 }
 .footer {
     grid-area:footer;
@@ -78,6 +91,10 @@ body{
         flex: 1 4 auto;
         justify-content: flex-end;
         list-style: none;
+        
+    }
+    .menu-item{
+        border-radius: 0px;
     }
     .header {
         display: grid;
@@ -94,6 +111,13 @@ body{
     }
     .aside {
         grid-column-end: 3;
+    }
+    .aside-section {
+        margin-top: 10%;
+        border-top-color: green;
+        border-top-style:solid;
+        border-top-width: 20px;
+        background: #00C300 ;
     }
     
 }
