@@ -36,21 +36,41 @@ body{
 }
 .navbar {
     display: inherit;
-    flex: 1 1 200px;
+    flex: 1 1 auto;
     flex-wrap: inherit;
-    justify-content: center;
     background: green;
+    justify-content: space-evenly;
     margin: 0;
+
 
 }
 .navbar-item {
     margin: inherit;
+
+}
+.title {
+    background: burlywood;
 }
 .menu { 
     display: inherit;
-    justify-content: center;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    align-content: center;
+    list-style: none;
+    background: pink;
+   
+}
+.menu-item{
   
+    background: cyan;
+    flex: inherit;
+   
+}
+.menu-item-text {
+    
+    background: lime;
+    text-decoration: none;
+    color: black;
 }
 .aside {
     grid-area: aside;
