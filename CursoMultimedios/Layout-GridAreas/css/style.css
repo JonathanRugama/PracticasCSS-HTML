@@ -1,5 +1,41 @@
+:root{
+    /* Colores de Texto */
+    --text-color: #2DB140;
+    --item-text-shadow: 1px 1px 2px #696;
+
+    --dark-body-background: #2F2F2F;
+    
+    --header-bottom-background: #475A47;
+    
+    --menu-item-background: #9EFFB4;
+
+    /* Menu items colores */
+    --background-linear-black-menu: linear-gradient(225deg, #2a2a2a, #323232);
+    --border-radius-menu: 48px;
+    --box-shadow-menu: -7px 7px 14px #292929, 
+    7px -7px 14px #353535;
+
+    /* Header y footer colores */
+    --background-header:  linear-gradient(225deg, #323232, #2a2a2a);
+    --box-shadow-header: -5px 5px 10px #292929, 
+    5px -5px 10px #353535;
+    --border-shadow-header: 0 5px 10px #2DB140;
+    --border-header-bottom-color: #2DB140;
+
+    /* Article configuracion de colores */
+    --background-article: linear-gradient(225deg, #2a2a2a, #323232); 
+    --box-shadow-article: -16px 16px 34px #262626, 
+    16px -16px 34px #383838;
+    --border-radius-article: 23px;
+
+    /* Configuracion de color de boton*/
+    --background-button: linear-gradient(225deg, #06591e, #076a23);
+    --box-shadow-button:  -9px 9px 18px #065b1e, 
+    9px -9px 18px #086b24;
+
+}
 body{
-    background: #2F2F2F;
+    background: var(--dark-body-background);
     margin: 0;
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,11 +50,11 @@ body{
 }
 .header {
     grid-area: header;
-    background: #475A47;
-    border-bottom-color: #9EFFB4;
+    background: var(--background-header);
+    border-bottom-color: var(--border-header-bottom-color);
     border-bottom-style:solid;
     border-bottom-width: 20px;
-    box-shadow: 0 5px 10px #9EFFB4;
+    box-shadow: var(--border-shadow-header);
 }
 .navbar{
     display: flex;
@@ -40,21 +76,24 @@ body{
 }
 .title{
     margin: 0 15px;
-    color:#9EFFB4 ;
+    color: var(--text-color) ;
     text-shadow: 1px 1px 2px #696;
 }
 .menu-item {
-    background: #9EFFB4;
+    border-radius: var(--border-radius-menu);
+    background: var(--background-linear-black-menu);
+    box-shadow:  var(--box-shadow-menu);
     margin: 0px 15px 15px; 
-    border-radius: 10px;
+    
     
 }
+
 .menu-item-text{
     display: block;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center; 
-    color: #2DB140;
+    color: var(--text-color);
     text-shadow: 1px 1px 2px #696;
 }
 .aside {
@@ -62,43 +101,43 @@ body{
 }
 .aside-section {
     margin: 5% 5%;
-    border-top-color: #9EFFB4;
+    border-top-color: var(--border-header-bottom-color);
     border-top-style:solid;
     border-top-width: 20px;
-    background: #475A47;
-   
+    background: var(--background-article) ;
+    box-shadow: var(--box-shadow-article);
     border-radius: 10px;
 }
 .section-text {
     margin: 5% 5%;
-    color: #9EFFB4 ;
+    color:  var(--text-color) ;
 }
 .main {
     grid-area: main;
     margin: 0 5%;
 }
 .article-section{
-    background: #9EFFB4;
-    border-radius: 1em;
+    background: var(--background-article);
+    border-radius: var(--border-radius-article);
+    box-shadow: var(--box-shadow-article);
 }
 .article-title, .article-text{
     color: #2DB140;
     text-shadow: 1px 1px 2px #696;
-    color: #2DB140;
     padding: 10px;
     
 }
 .footer {
     grid-area:footer;
-    background: #475A47;
-    border-top-color: #9EFFB4;
+    background: var(--background-header);
+    border-top-color: var(--border-header-bottom-color);
     border-top-style:solid;
     border-top-width: 20px;
 }
 .btn-add-task{
-    background: #9EFFB4;
-    border-radius: 1em;
-    color: #2DB140;
+    background: var(--background-button);
+    border-radius: 25px;
+    color: var(--text-color);
     text-shadow: 1px 1px 2px #696;
     border: none;
 }
@@ -107,7 +146,7 @@ body{
     justify-content: space-evenly;
 }
 .list-tasks {
-    color: #9EFFB4 ; 
+    color: var(--text-color) ; 
     list-style-image: url("../images/mano-2-1.svg");  
     }
 .add-task-text {
