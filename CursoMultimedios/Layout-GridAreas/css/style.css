@@ -1,6 +1,8 @@
 body{
+    background: #2F2F2F;
     margin: 0;
     font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
     min-height: 100vh;
     gap: .5em;
@@ -12,11 +14,11 @@ body{
 }
 .header {
     grid-area: header;
-    background: #00C300;
-    border-bottom-color: green;
+    background: #475A47;
+    border-bottom-color: #9EFFB4;
     border-bottom-style:solid;
     border-bottom-width: 20px;
-    box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #9EFFB4;
 }
 .navbar{
     display: flex;
@@ -38,46 +40,82 @@ body{
 }
 .title{
     margin: 0 15px;
+    color:#9EFFB4 ;
+    text-shadow: 1px 1px 2px #696;
 }
 .menu-item {
-    background: green;
+    background: #9EFFB4;
     margin: 0px 15px 15px; 
     border-radius: 10px;
+    
 }
 .menu-item-text{
     display: block;
     text-decoration: none;
     padding: 15px 0;
     text-align: center; 
+    color: #2DB140;
+    text-shadow: 1px 1px 2px #696;
 }
 .aside {
-    grid-area: aside;  
+    grid-area: aside; 
 }
 .aside-section {
-    border-top-color: green;
+    margin: 5% 5%;
+    border-top-color: #9EFFB4;
     border-top-style:solid;
     border-top-width: 20px;
-    background: #00C300 ;
-    margin: 0 5%;
+    background: #475A47;
+   
     border-radius: 10px;
 }
 .section-text {
     margin: 5% 5%;
+    color: #9EFFB4 ;
 }
 .main {
     grid-area: main;
     margin: 0 5%;
 }
+.article-section{
+    background: #9EFFB4;
+    border-radius: 1em;
+}
+.article-title, .article-text{
+    color: #2DB140;
+    text-shadow: 1px 1px 2px #696;
+    color: #2DB140;
+    padding: 10px;
+    
+}
 .footer {
     grid-area:footer;
-    background: #00C300;
-    border-top-color: green;
+    background: #475A47;
+    border-top-color: #9EFFB4;
     border-top-style:solid;
     border-top-width: 20px;
 }
-
+.btn-add-task{
+    background: #9EFFB4;
+    border-radius: 1em;
+    color: #2DB140;
+    text-shadow: 1px 1px 2px #696;
+    border: none;
+}
+.title-tasks {
+    display: flex;
+    justify-content: space-evenly;
+}
+.list-tasks {
+    color: #9EFFB4 ; 
+    list-style-image: url("../images/mano-2-1.svg");  
+    }
+.add-task-text {
+    border-radius: 10px;
+}
 @media screen and (min-width: 1024px) {
     body {
+    
     grid-template-areas: 'header header header header'
                          ' main main aside aside'
                          'footer footer footer footer';
@@ -112,12 +150,16 @@ body{
     .aside {
         grid-column-end: 3;
     }
-    .aside-section {
-        margin-top: 10%;
-        border-top-color: green;
-        border-top-style:solid;
-        border-top-width: 20px;
-        background: #00C300 ;
+    .aside-section{
+       margin: 5%;
+    }
+
+    .section-text{
+        margin: 0%;
+    }
+    .add-task-text{
+        width: 8em;
+        
     }
     
-}
+   }
