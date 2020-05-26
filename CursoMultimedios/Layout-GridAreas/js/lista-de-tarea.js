@@ -1,5 +1,5 @@
-const listOfTasks = []
-
+let listOfTasks = []
+initializeFromLocalStorage();
 document.querySelector(".title-tasks").addEventListener("click", function (event) {
     buttonClick(event.target.innerText);
 });
@@ -20,11 +20,29 @@ function addTask () {
         alert("Por favor ingrese una tarea");
     }else{
         listOfTasks.push(valueOfTask.trim());
+        addTasksToLocalStorage(listOfTasks);
         document.getElementsByClassName("add-task-text")[0].value = ''; 
         displayListOfTasks();
     }
 }
 
+
+function addTasksToLocalStorage (taskList) {
+    localStorage.setItem('localTaskList', JSON.stringify(taskList));
+}
+function getTasksFromLocalStorage (){
+    let storedList = localStorage.getItem('localTaskList');
+    if(storedList == null) {
+        listOfTasksFromStore = [];
+    }else {
+        listOfTasksFromStore = JSON.parse(storedList);
+    }
+    return listOfTasksFromStore;
+}
+function initializeFromLocalStorage(){
+    listOfTasks = getTasksFromLocalStorage();
+    displayListOfTasks();
+}
 function displayListOfTasks() {
     let data = '';
     let i = 0;
